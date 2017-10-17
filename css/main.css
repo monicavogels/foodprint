@@ -7,15 +7,61 @@
 	font-family: WWF; src: url('../fonts/wwf-webfont.ttf'); }
 
 
+
 /* Typografy (16px = 100%)
 ------------------------------------------------------------------------*/
 
 
 
+
+/* Body
+------------------------------------------------------------------------*/
+body {
+	background-color: black;
+}
+
+
+
 /* Header
 ------------------------------------------------------------------------*/
+nav {
+	display: block;
+	z-index: 999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100px;
+	background-color: white;
+}
+
+	nav ul li a {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+		list-style: none;
+		height: 100px;
+
+		text-decoration: none;
+		font-family: WWF;
+		text-transform: uppercase;
+		color: black;	
+	}
+
+.current {
+	background-color: black;
+}
+
+	.current a {
+		color: white;
+	}
+
+li:hover {
+	background-color: yellow;
+}
 
 
-
-/* Hello
+/* Grid
 ------------------------------------------------------------------------*/
