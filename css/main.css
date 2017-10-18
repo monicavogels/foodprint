@@ -18,36 +18,44 @@
 ------------------------------------------------------------------------*/
 body {
 	background-color: black;
+	display: grid;
+	grid-template-columns: 100px 50% 50%;
+  	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-
-
 
 /* Header
 ------------------------------------------------------------------------*/
+header {
+ 	grid-column: 1 / 2;
+}
+
+
 nav {
 	display: block;
-	z-index: 999;
 	position: fixed;
-	left: 0;
 	top: 0;
+	left: 0;
 	bottom: 0;
-	width: 100px;
 	background-color: white;
+	width: 50px;
 }
 
 	nav ul li a {
+		
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		text-align: center;
 
 		list-style: none;
-		height: 100px;
+		height: 50px;
 
 		text-decoration: none;
 		font-family: WWF;
 		text-transform: uppercase;
-		color: black;	
+		color: black;
+
+
 	}
 
 .current {
@@ -59,9 +67,8 @@ nav {
 	}
 
 li:hover {
-	background-color: yellow;
+	background: #00ff6d; /* For browsers that do not support gradients */
+	background: linear-gradient(145deg, #00ff6d 0%, #31f7ce 30%, #07bbf6 75%);
 }
 
 
-/* Grid
-------------------------------------------------------------------------*/
