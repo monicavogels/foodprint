@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Green hex #8cc63f */
+
 /* WWF Font
 ------------------------------------------------------------------------*/
 @font-face { 
@@ -10,8 +12,50 @@
 
 /* Typografy (16px = 100%)
 ------------------------------------------------------------------------*/
+h1 { /* Page Title Page */
+	font-family: "WWF", sans-serif;
+	color: white;
+	font-size: 100pt;
+}
 
+h2 { /* Sub Title Page */
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 16pt;
+}
 
+h3 { /* Big title Thumb */
+	font-family: "WWF", sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 60pt;
+}
+
+h4 { /* Sub title Thumb */
+	font-family: "WWF", sans-serif;
+	color: white;
+	font-size: 24pt;
+	text-decoration: underline;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	color: black;
+	color:  #8cc63f;
+}
+
+span {
+	font-weight: 700;
+}
+
+a {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	color: #8cc63f;
+	font-size: 12pt;
+	text-decoration: underline;
+}
 
 
 /* Body
@@ -19,56 +63,389 @@
 body {
 	background-color: black;
 	display: grid;
-	grid-template-columns: 100px 50% 50%;
-  	grid-template-rows: 1fr 1fr 1fr 1fr;
+	height: 100%;
+	width: 100%;
 }
+
+
 
 /* Header
 ------------------------------------------------------------------------*/
 header {
- 	grid-column: 1 / 2;
-}
-
-
-nav {
-	display: block;
 	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	background-color: white;
-	width: 50px;
+ 	z-index: 1;
+ 	background-color: white;
+	width: 100px;
+	height: 100vh;
 }
 
+nav {
+	width: 100%;
+}
+
+	nav ul li:hover {
+		background: #8cc63f; 
+		/*background: linear-gradient(145deg, #00ff6d 0%, #31f7ce 30%, #07bbf6 75%);*/
+	}
+
+		.logout:hover {
+			background: white;
+		}
+
 	nav ul li a {
-		
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
-		text-align: center;
+		align-items: center;
+		height: 100px;
 
 		list-style: none;
-		height: 50px;
-
 		text-decoration: none;
 		font-family: WWF;
 		text-transform: uppercase;
 		color: black;
-
-
 	}
 
-.current {
-	background-color: black;
+	nav ul li a img {
+		width: 50%;
+	}
+
+	.current {
+		background-color: black;
+	}
+
+		.current a {
+			color: white;
+		}	
+
+
+/* Personal Login/Info/Preferences
+------------------------------------------------------------------------*/
+#personal_popup {
+    position: fixed; 
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-	.current a {
+#personal_login {
+	background-color: #191919;
+    width: 50%;
+    padding: 5% 0%;
+    
+  	display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+	
+	#personal_login form {
+		width: 40%;		
+	}
+
+	#personal_login input {
+		width: 100%;
+	    padding: 20px 0px;
+	    margin: 10px 0 25px 0;
+	    display: inline-block;
+	    font-family: "Open Sans", sans-serif;
+	    font-weight: 300;
+	    font-size: 16px;
+	    background-color: #191919;
+	    border: none;
+	    letter-spacing: 1px;
+	    border-bottom: 1px solid white;
+	    outline: none;
+	}
+
+		#personal_login input[type=text] {
+	    	color: #31f7ce;
+			caret-color: #31f7ce;
+		}
+
+		#personal_login input[type=password] {
+			color: #1cd9e2;
+			caret-color: #1cd9e2;
+		}
+
+
+	#personal_login button {
+		display: block;
+	    overflow: hidden;
+		background: linear-gradient(145deg, #00ff6d 0%, #31f7ce 30%, #07bbf6 100%);
+		width: 50%;
+		margin-top: 15px;
+	    padding: 20px 20px;
+	    border-radius: 500px;
+	    border: none;
+	    cursor: pointer;
+
+	    font-family: "Open Sans", sans-serif;
+		font-size: 12px;
+		font-weight: 700;
+	    letter-spacing: 1px;
+		text-transform: lowercase;
 		color: white;
+	    text-align: center;
 	}
 
-li:hover {
-	background: #00ff6d; /* For browsers that do not support gradients */
-	background: linear-gradient(145deg, #00ff6d 0%, #31f7ce 30%, #07bbf6 75%);
+#personal_info {
+	background-color: #191919;
+    width: 50%;
+    height: 50%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
+
+#personal_preferences {
+	background-color: #191919;
+    width: 50%;
+    height: 50%;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Foodprint Content
+------------------------------------------------------------------------*/
+#foodprint_content {
+	display: flex;
+	flex-wrap: wrap;
+ 	height: 100vh;
+ 	width: 100%;
+}
+
+#foodprint_text { /* Top 30% section */
+	display: flex;
+	margin-left: 100px;
+	width: 100%;
+	height: 30%;
+}
+
+	#foodprint_title {
+		flex: 0 0 30%;
+		
+		width: 33%;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 0 0 0 3%;
+	}
+
+		#foodprint_title h1 {
+			margin-bottom: 1%;
+		}
+
+		#foodprint_title h2 {
+
+		}
+
+	#foodprint_why {
+		flex: 1;
+
+		display: flex;
+		flex-direction: row;
+
+		padding: 5%;
+	}
+	
+		.why {
+			flex: 0 0 25%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.why img {
+			width: 50px;
+			margin-right: 15px;
+		}
+
+		.why p {
+
+		}
+
+		.hillo_user {
+			color: white !important;
+		}
+
+#index_thumbnails { /* Bottom 60% section */
+	margin-left: 100px;
+	width: 100%;
+	height: 65%;
+
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 50% 50%;
+	margin-bottom: 5%;
+}
+
+		.index_thumb h4, h3 {
+			margin-bottom: 15px;
+		}
+
+	#thumb_chefofthemonth {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/chefofthemonth.jpg") no-repeat center;
+		margin: 0 5px 0 0;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_foodthismonth {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/foodthismonth.jpg") no-repeat center;
+		margin: 0 5px 5px 5px;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_myths{
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/myths.jpg") no-repeat center;
+		margin: 0 5px 5px 5px;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_previousstats {
+		grid-column-start: 5;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 3;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/previousstats.jpg") no-repeat center;
+		margin: 0 0 0 5px;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+
+	#thumb_productoftheweek {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/productoftheweek.jpg") no-repeat center;
+		margin: 5px 5px 0 5px;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+
+/* Statistics
+------------------------------------------------------------------------*/
+
+
+
+
+/* Products
+------------------------------------------------------------------------*/
+
+
+
+
+/* Recipes
+------------------------------------------------------------------------*/
+
+
+
+
+/* Profile
+------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

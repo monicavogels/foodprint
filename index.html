@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <title>FOODPRINT | Statistics</title>
+        <title>FOODPRINT | Foodprint</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,9 +15,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-        
         <!-- Favicon    
             <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
             <link rel="shortcut icon" type="img/gif" href="img/favicon.gif">
@@ -28,25 +26,109 @@
         <header>
             <nav>
                 <ul>
-                    <li class="current"><a href="index.html">S</a></li>
-                    <li><a href="productdatabase.html">P</a></li>
-                    <li><a href="recipes.html">R</a></li>
-                    <li><a href="profile.html">P</a></li>
+                    <li class="current"><a href="index.html">foodprint</a></li>
+                    <li><a href="statistics.html"><img src="icons/statistics.svg"/></a></li>
+                    <li><a href="productdatabase.html"><img src="icons/sustainability.svg"/></a></li>
+                    <li><a href="recipes.html"><img src="icons/recipe.svg"/></a></li>
+                    <li><a href="profile.html"><img src="icons/profile.svg"/></a></li>
+                    <li class="logout"><a href=""></a></li>
                 </ul>
+            </nav>
+
+            <!--<img src="img/panda_logo.svg" />-->
         </header> <!-- /end header -->
         
-        <div id="login"> <!-- Overlay div, 25px margins, 3 screens: login, personal data, preferences. -->
+        <section id="personal_popup">
+            <div id="personal_login"> <!-- Overlay div, 25px margins, 3 screens: login, personal data, preferences. -->
+                <form>
+                    <input type="text" placeholder="email" name="uname" required>
+                    <input type="password" placeholder="password" name="psw" required>
+                    <button class="login_button" type="submit">Login</button>
+                </form>
+            </div>
 
-        </div>
+            <div id="personal_info">
+            </div>
 
-        <div id="content">
+            <div id="personal_preferences">
+            </div>
 
-        </div> <!-- /end #content -->
+            <div id="myModal" class="modal">
+        </section>
+
+        <section id="foodprint_content">
+            <section id="foodprint_text">
+                <div id="foodprint_title"> 
+                    <h1>FOODPRINT</h1> 
+                    <h2><span>join</span> the sustainable eating movement!<h2>
+                </div>
+                
+                <section id="foodprint_why">
+                    <div class="why">
+                        <img src="icons/statistics_green.svg" />
+                        <p><span>add, use, collect</span><br/>
+                        delicious recipes</p>
+                    </div>
+
+                    <div class="why">
+                        <img src="icons/sustainability_green.svg" />
+                        <p><span>add, use, collect</span><br/>
+                        delicious recipes</p>
+                    </div>
+
+                    <div class="why">
+                        <img src="icons/recipe_green.svg" />
+                        <p><span>add, use, collect</span><br/>
+                        delicious recipes</p>
+                    </div>
+
+                    <div class="why">
+                        <img src="icons/badges_green.svg" />
+                        <p><span>add, use, collect</span><br/>
+                        delicious recipes</p>
+                    </div>
+                </section>
+            </section>
+
+            <section id="index_thumbnails">
+                <div class="index_thumb" id="thumb_chefofthemonth">
+                    <h4>Chef of the month</h4>
+                    <h3>Jaimie Oliver!</h3>
+                    <a>See exclusive recipes ></a>
+                </div>
+
+                 <div id="thumb_foodthismonth">
+                    <h4>What to eat in</h4>
+                    <h3>November</h3>
+                    <a>See full list ></a>
+                </div>
+
+                 <div id="thumb_myths">
+                    <h4>10 myths about</h4>
+                    <h3>Storing food</h3>
+                    <a>Read the story ></a>
+                </div>
+
+                <div id="thumb_productoftheweek">
+                    <h4>Product of the week</h4>
+                    <h3>Red apple!</h3>
+                    <a>See recipes ></a>
+                </div>
+
+                 <div id="thumb_previousstats">
+                    <h4>September is gone!</h4>
+                    <h3>How well<br/>did we do?</h3>
+                    <a>See september statistics ></a>
+                </div>
+
+            </section>
+        </section> <!-- /end #content -->
 
 
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
         <!-- js/ .js -->
