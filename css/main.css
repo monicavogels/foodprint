@@ -41,7 +41,6 @@ h4 { /* Sub title Thumb */
 
 p {
 	font-family: "Open Sans", sans-serif;
-	color: black;
 	color:  #8cc63f;
 }
 
@@ -265,7 +264,7 @@ nav {
 		display: flex;
 		flex-direction: row;
 
-		padding: 5%;
+		padding: 2%;
 	}
 	
 		.why {
@@ -281,7 +280,7 @@ nav {
 		}
 
 		.why p {
-
+			line-height: 1.2;
 		}
 
 		.hillo_user {
