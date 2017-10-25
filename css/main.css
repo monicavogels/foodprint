@@ -226,14 +226,14 @@ nav {
 #foodprint_content {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: flex-end;
  	height: 100vh;
- 	width: 100%;
+ 	width: calc(100% - 100px);
+ 	margin-left: 100px;
 }
 
 #foodprint_text { /* Top 30% section */
 	display: flex;
-	margin-left: 100px;
 	width: 100%;
 	height: 30%;
 }
@@ -289,7 +289,6 @@ nav {
 		}
 
 #index_thumbnails { /* Bottom 60% section */
-	margin-left: 100px;
 	width: 100%;
 	height: 65%;
 
