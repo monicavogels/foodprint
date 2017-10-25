@@ -225,7 +225,8 @@ nav {
 ------------------------------------------------------------------------*/
 #foodprint_content {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
  	height: 100vh;
  	width: 100%;
 }
@@ -295,7 +296,6 @@ nav {
 	display: grid;
 	grid-template-columns: 20% 20% 20% 20% 20%;
 	grid-template-rows: 50% 50%;
-	margin-bottom: 5%;
 }
 
 		.index_thumb h4, h3 {
