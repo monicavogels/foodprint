@@ -39,27 +39,137 @@
         </header> <!-- /end header -->
         
         <section id="personal_popup">
-            <div id="personal_login"> <!-- Overlay div, 25px margins, 3 screens: login, personal data, preferences. -->
+            <div id="personal_info"> <!-- Overlay div, 25px margins, 3 screens: login, personal data, preferences. -->
                 <form>
-                    <input type="text" placeholder="email" name="uname" required>
-                    <input type="password" placeholder="password" name="psw" required>
-                    <button class="login_button" type="submit">Login</button>
+                    <label>hello,<br/> what's your name?</label>
+                    <input type="text" placeholder="name" name="uname" required>
+                    <button class="next_button" type="submit">next</button>
                 </form>
             </div>
 
-            <div id="personal_info">
+            <div id="personal_login">
+                <form>
+                    <label>let's sign you up,<br/> bambi!</label>
+                    <input type="text" placeholder="email *" name="uname" required>
+                    <input type="password" placeholder="password *" name="psw" required>
+                    <button class="login_button" type="submit">next</button>
+                </form>
             </div>
 
             <div id="personal_preferences">
+                <form>
+                    <label>want to set up your<br/> searchfilters?</label>
+                    
+                    <section class="preference_switches">
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-1"></label>
+                          <label class="preference_label">quick</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-2"></label>
+                          <label class="preference_label">vegetarian</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-3"></label>
+                          <label class="preference_label">vegan</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-4"></label>
+                          <label class="preference_label">budget</label>
+                        </div>
+                    </section>
+                    <section class="preference_switches">
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-5"></label>
+                          <label class="preference_label">meal for 1</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-6"></label>
+                          <label class="preference_label">seasonal</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-7"></label>
+                          <label class="preference_label">certified</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-8" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-8"></label>
+                          <label class="preference_label">easy</label>
+                        </div>
+                    </section>
+
+                    <button class="next_button" type="submit">next</button>
+                </form>
             </div>
 
-            <div id="myModal" class="modal">
+            <div id="personal_goals">
+                <form>
+                    <label>final step:<br/>let's set your goals!</label>
+                    <section class="preference_switches">
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-9" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-9"></label>
+                          <label class="preference_label">less meat</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-10" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-10"></label>
+                          <label class="preference_label">more certified products</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-11" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-11"></label>
+                          <label class="preference_label">more certified products</label>
+                        </div>
+
+                        <div class="preference_switch">
+                          <input id="cmn-toggle-12" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                          <label for="cmn-toggle-12"></label>
+                          <label class="preference_label">more seasonal products</label>
+                        </div>
+                    </section>
+                    <section class="goal_tabs">
+                        <div class="goal_tab">
+                            <p>once</p><span>v</span>
+                            <p>a week</p><span>v</span>
+                        </div>
+                        <div class="goal_tab">
+                           <p>once</p><span>v</span>
+                            <p>a week</p><span>v</span>
+                        </div>
+                        <div class="goal_tab">
+                           <p>once</p><span>v</span>
+                            <p>a week</p><span>v</span>
+                        </div>
+                        <div class="goal_tab">
+                           <p>once</p><span>v</span>
+                            <p>a week</p><span>v</span>
+                        </div>
+                    </section>
+                    <button class="next_button" type="submit">start cooking!</button>
+                </form>
+            </div>
         </section>
 
         <section id="foodprint_content">
             <section id="foodprint_text">
                 <div id="foodprint_title"> 
-                    <h1>FOODPRINT</h1> 
+                    <h1>foodprint</h1> 
                     <h2><span>join</span> the sustainable eating movement!<h2>
                 </div>
                 
@@ -92,33 +202,33 @@
 
             <section id="index_thumbnails">
                 <div class="index_thumb" id="thumb_chefofthemonth">
-                    <h4>Chef of the month</h4>
-                    <h3>Jaimie Oliver!</h3>
-                    <a href="#">See exclusive recipes ></a>
+                    <h4>chef of the month</h4>
+                    <h3>jaimie oliver!</h3>
+                    <a href="#">see exclusive recipes ></a>
                 </div>
 
                  <div id="thumb_foodthismonth">
-                    <h4>What to eat in</h4>
-                    <h3>November</h3>
-                    <a href="#">See full list ></a>
+                    <h4>what to eat in</h4>
+                    <h3>november</h3>
+                    <a href="#">wee full list ></a>
                 </div>
 
                  <div id="thumb_myths">
                     <h4>10 myths about</h4>
-                    <h3>Storing food</h3>
-                    <a href="#">Read the story ></a>
+                    <h3>storing food</h3>
+                    <a href="#">read the story ></a>
                 </div>
 
                 <div id="thumb_productoftheweek">
-                    <h4>Product of the week</h4>
-                    <h3>Red apple!</h3>
-                    <a href="#">See recipes ></a>
+                    <h4>product of the week</h4>
+                    <h3>red apple!</h3>
+                    <a href="#">see recipes ></a>
                 </div>
 
                  <div id="thumb_previousstats">
-                    <h4>September is gone!</h4>
-                    <h3>How well<br/>did we do?</h3>
-                    <a href="#">See september statistics ></a>
+                    <h4>september is gone!</h4>
+                    <h3>how well<br/>did we do?</h3>
+                    <a href="#">see september statistics ></a>
                 </div>
 
             </section>

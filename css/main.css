@@ -56,6 +56,13 @@ a {
 	text-decoration: underline;
 }
 
+label {
+	font-family: "WWF", sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 50pt;	
+}
+
 
 /* Body
 ------------------------------------------------------------------------*/
@@ -103,7 +110,6 @@ nav {
 		list-style: none;
 		text-decoration: none;
 		font-family: WWF;
-		text-transform: uppercase;
 		color: black;
 	}
 
@@ -130,79 +136,29 @@ nav {
     width: 100%;
     height: 100%;
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.8); 
 
     display: none;
     justify-content: center;
     align-items: center;
 }
 
-#personal_login {
-	background-color: #191919;
+#personal_info {
+	background-color: #000;
+	border: .1px solid #8cc63f;
     width: 50%;
     padding: 5% 0%;
     
   	display: none;
     justify-content: center;
     align-items: center;
-
 }
 
-	
-	#personal_login form {
-		width: 40%;		
-	}
-
-	#personal_login input {
-		width: 100%;
-	    padding: 20px 0px;
-	    margin: 10px 0 25px 0;
-	    display: inline-block;
-	    font-family: "Open Sans", sans-serif;
-	    font-weight: 300;
-	    font-size: 16px;
-	    background-color: #191919;
-	    border: none;
-	    letter-spacing: 1px;
-	    border-bottom: 1px solid white;
-	    outline: none;
-	}
-
-		#personal_login input[type=text] {
-	    	color: #31f7ce;
-			caret-color: #31f7ce;
-		}
-
-		#personal_login input[type=password] {
-			color: #1cd9e2;
-			caret-color: #1cd9e2;
-		}
-
-
-	#personal_login button {
-		display: block;
-	    overflow: hidden;
-		background: linear-gradient(145deg, #00ff6d 0%, #31f7ce 30%, #07bbf6 100%);
-		width: 50%;
-		margin-top: 15px;
-	    padding: 20px 20px;
-	    border-radius: 500px;
-	    border: none;
-	    cursor: pointer;
-
-	    font-family: "Open Sans", sans-serif;
-		font-size: 12px;
-		font-weight: 700;
-	    letter-spacing: 1px;
-		text-transform: lowercase;
-		color: white;
-	    text-align: center;
-	}
-
-#personal_info {
-	background-color: #191919;
+#personal_login {
+	background-color: #000;
+	border: .1px solid #8cc63f;
     width: 50%;
-    height: 50%;
+	padding: 5% 0%;
 
     display: none;
     justify-content: center;
@@ -210,15 +166,186 @@ nav {
 }
 
 #personal_preferences {
-	background-color: #191919;
+	background-color: #000;
+	border: .1px solid #8cc63f;
     width: 50%;
-    height: 50%;
-    
+    padding: 5% 0%;
+
     display: none;
     justify-content: center;
     align-items: center;
 }
 
+#personal_goals {
+	background-color: #000;
+	border: .1px solid #8cc63f;
+    width: 50%;
+    padding: 5% 0%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+	
+	#personal_info form, #personal_login form {
+		width: 40%;		
+	}
+
+	#personal_preferences form {
+		width: 60%;	
+	}
+
+	#personal_goals form {
+		width: 60%;		
+	}
+
+	#personal_info input, #personal_login input {
+		width: 100%;
+	    padding: 20px 0px;
+	    margin: 25px 0 0px 0;
+	    display: inline-block;
+	    font-family: "Open Sans", sans-serif;
+	    font-weight: 300;
+	    font-size: 16px;
+	    background-color: #000;
+	    border: none;
+	    letter-spacing: 1px;
+	    border-bottom: 1px solid #8cc63f;
+	    outline: none;
+	}
+
+		#personal_info input[type=text], #personal_login input[type=text] {
+	    	color: white;
+			caret-color: whites;
+		}
+
+		#personal_info input[type=password], #personal_login input[type=password] {
+			color: white;
+			caret-color: white;
+		}
+
+
+	#personal_info button, #personal_login button, #personal_preferences button, #personal_goals button  {
+		display: block;
+		float: right;
+	    overflow: hidden;
+		background: #8cc63f;
+		margin-top: 50px;
+	    padding: 20px 40px;
+	    /*border-radius: 500px;*/
+	    border: none;
+	    cursor: pointer;
+
+	    font-family: "Open Sans", sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+	    letter-spacing: 1px;
+		text-transform: lowercase;
+		color: white;
+	    text-align: center;
+	}
+
+	.preference_switches {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+
+	}
+
+		.preference_switch {
+			width: 100px;
+			margin: 50px 0px 0 0;
+		}
+
+		.preference_label {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 300;
+			color: white;
+			font-size: 10pt;
+			margin: 10px 0 0 0;
+			
+		}
+
+	.goal_tabs {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+		.goal_tab {
+			width: 100px;
+			margin: 50px 0px 0 0;
+
+		}
+
+		.goal_tab p {
+			width: 100%;
+			padding: 0 0 15px 0;
+			border-bottom: 1px solid #8cc63f;
+
+		}
+
+/* Toggle Buttons
+------------------------------------------------------------------------*/
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #000;
+  border-radius: 50px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 46px;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #8cc63f;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 50px;
+  background-color: #8cc63f;
+}
 
 /* Foodprint Content
 ------------------------------------------------------------------------*/
@@ -251,7 +378,7 @@ nav {
 	}
 
 		#foodprint_title h1 {
-			margin-bottom: 1%;
+			margin-bottom: 5%;
 		}
 
 		#foodprint_title h2 {
