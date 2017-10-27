@@ -563,8 +563,9 @@ nav {
 			margin-bottom: 3%;
 		}
 
-		#productdatabase_title h2 {
-
+		#productdatabase_title a {
+			text-decoration: none;
+			font-weight: 300;
 		}
 
 	#productdatabase_searchbar {
@@ -606,10 +607,6 @@ nav {
 		margin: 5% 0 5% 0;
 	}
 
-		.product_icon {
-
-		}
-
 		.product_icon img {
 			padding: 25px;
 			margin-bottom: 15px;
@@ -633,90 +630,132 @@ nav {
 		background: green;
 	}
 
-/* Veggie Database/Search Content
-------------------------------------------------------------------------*/
-#veggie_dropdown {
-	width: 100%;
-	height: 3%;
-	margin-bottom: 2%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-end;
-
-}
-
-	#veggie_dropdown p {
-		width: 12%;
-		color: white;
-		border-bottom: 1px solid white;
-		font-size: 16pt;
-		font-weight: 300;
-		margin: 0 1% 0 3%;
-		padding: 0 0 1% 0;
-		display: flex;
-		justify-content: space-between;
-	}
-
-#veggie_list {
-	width: 100%;
-	height: 55%;
-	display: flex;
-	justify-content: flex-start;
-}
-
-#veggie_row {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin: 3%;
-}
-
-	.veggie {
+	/* Veggie Database/Search Content
+	------------------------------------------------------------------------*/
+	#veggie_dropdown {
+		width: 100%;
+		height: 3%;
+		margin-bottom: 2%;
 		display: flex;
 		flex-direction: row;
-		border-bottom: 1px solid white;
-		padding: 0px 0 100px 0;
-		margin: 0 0 25px 0;
+		justify-content: flex-start;
+		align-items: flex-end;
 
-		display: flex;
-		justify-content: space-between;
 	}
 
-		.veggie_icon {
-
+		#veggie_dropdown p {
+			width: 12%;
+			color: white;
+			border-bottom: 1px solid white;
+			font-size: 16pt;
+			font-weight: 300;
+			margin: 0 1% 0 3%;
+			padding: 0 0 1% 0;
+			display: flex;
+			justify-content: space-between;
 		}
 
-			.veggie_icon img {
-				width: 75px;
-				margin-right: 25px;
+	#veggie_list {
+		width: 100%;
+		height: 55%;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	#veggie_row {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 3%;
+	}
+		.veggie {
+			display: flex;
+			flex-direction: row;
+			border-bottom: 1px solid white;
+			padding: 0px 0 100px 0;
+			margin: 0 0 25px 0;
+
+			display: flex;
+			justify-content: space-between;
+		}
+
+				.veggie_icon img {
+					width: 75px;
+					margin-right: 25px;
+				}
+
+			.veggie_info {
+				width: 65%;
+			
+			}
+				.veggie_info h5 {
+					margin: 0 0 10px 0;
+				}
+
+				.veggie_info p {
+					color: #555;
+
+				}
+
+			.veggie_sustainability {
+				margin-top: 25px;
 			}
 
-		.veggie_info {
-			width: 65%;
+				.veggie_sustainability img {
+					width: 25px;
+				}
+
+				.sus_trans {
+					opacity: 0.3;
+				}
+
+	/* Veggie Database/Search Content
+	------------------------------------------------------------------------*/
+	#greenpeas_intro { /* Top 30% section */
+		display: flex;
+		width: 100%;
+		height: 30%;
+	}
+
+	#greenpeas_title {
+		flex: 0 0 50%;
 		
+		width: 50%;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 0 0 0 3%;
+	}
+		#greenpeas_title a {
+			text-decoration: none;
+			font-weight: 300;
+			display: flex;
+			flex-direction: row;
 		}
-			.veggie_info h5 {
-				margin: 0 0 10px 0;
-			}
 
-			.veggie_info p {
-				color: #555;
-
-			}
-
-		.veggie_sustainability {
-			margin-top: 25px;
+		#greenpeas_title h1 {
+			margin-bottom: 3%;
 		}
 
-			.veggie_sustainability img {
-				width: 25px;
-			}
+		#greenpeas_title img {
+			width: 100px;
+		}
 
-			.sus_trans {
-				opacity: 0.3;
-			}
+		#greenpeas_title h2 {
+
+		}
+
+		
+
+	#greenpeas_statistics {
+
+	}
+
+
 
 /* Recipes
 ------------------------------------------------------------------------*/
