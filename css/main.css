@@ -604,6 +604,14 @@ nav {
 
 /* Profile
 ------------------------------------------------------------------------*/
+#profile_content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+ 	height: 100vh;
+ 	width: calc(100% - 100px);
+ 	margin-left: 100px;
+}
 
 
 
