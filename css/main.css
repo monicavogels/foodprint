@@ -39,7 +39,13 @@ h4 { /* Sub title Thumb */
 	text-decoration: underline;
 }
 
-h5 {
+h5 { /* Sub title Thumb w/o line */
+	font-family: "WWF", sans-serif;
+	color: white;
+	font-size: 24pt;
+}
+
+h6 { /* Sub title Thumb w/o line */
 	font-family: "WWF", sans-serif;
 	color: white;
 	font-size: 30pt;
@@ -826,12 +832,11 @@ nav {
 }
 
 	#profile_title {
-		flex: 0 0 62%;
+		flex: 0 0 75%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-
 		padding: 0 0 0 3%;
 	}
 
@@ -839,14 +844,10 @@ nav {
 			margin-bottom: 5%;
 		}
 
-		#profile_title h2 {
-
-		}
-
 	#profile_pic {
 		padding: 2%;
-		width: 35%;
-		height: 100%;
+		width: 25%;
+		height: 80%;
 		display: flex;		
 	  	align-items: center;
 	 	justify-content: center;
@@ -862,7 +863,7 @@ nav {
 
 	#profile_data { /* Left 65% section */
 		display: flex;
-		width: 65%;
+		width: 75%;
 		height: 90%;
 				padding: 0 0 0 3%;
 		flex-wrap:wrap;
@@ -985,16 +986,15 @@ nav {
 		/* LEADERBOARD section
 		------------------------------------------------------------------------*/
 
-	#profile_leaderboard { /* Right 35% section */
-		display: flex;
-		width: 35%;
-		height: 100%;
-		/* background: red; */
-		display: flex;
-	   	flex-direction: column;
-	    align-items: flex-start;
-		
-	}
+		#profile_leaderboard { /* Right 35% section */
+			display: flex;
+			width: 25%;
+			height: 100%;
+			display: flex;
+		   	flex-direction: column;
+		    align-items: flex-start;
+			
+		}
 
 		#leadertitle{
 			float:left;
@@ -1009,22 +1009,48 @@ nav {
 			height:15%;
 			width:100%;
 			padding: 5%;
-			background: orange;
 			display: flex;
 		   	flex-direction: column;
 		    align-items: flex-start;
 		}
 
+		.avatar {
+			background: #000;
+		    border-radius: 50%;
+		    width:50px;
+			height:50px;
+			text-align:center;
+			vertical-align:middle;
+		}
 
+		table {
+			width: 90%;
+			margin: 5%;
+		 	border-collapse: collapse;
+		}
 
+		td, th {
+			padding: 4%;
+			height: 80px;
+			text-align: left;
+			vertical-align: middle;
+		}
 
+		.gradientline{ 
+		    display:block;
+		    border:none;
+		    height:2px;
+		    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#8cc63f), to(#007932));
+		    margin: 10px;
+		}
 
+		#active{
+			color: #8cc63f;
+		}
 
-
-
-
-
-
+		#leaderboardname:hover{
+			color: #8cc63f;
+		}
 
 
 
