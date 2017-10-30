@@ -403,7 +403,7 @@ nav {
 	}
 
 		#foodprint_title h1 {
-			margin-bottom: 5%;
+			margin-bottom: 3%;
 		}
 
 		#foodprint_title h2 {
@@ -541,6 +541,55 @@ nav {
 
 /* Statistics
 ------------------------------------------------------------------------*/
+#statistics_content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+ 	height: 100vh;
+ 	width: calc(100% - 100px);
+ 	margin-left: 100px;
+}
+
+#statistics_intro { /* Top 30% section */
+	display: flex;
+	width: 100%;
+	height: 30%;
+}
+
+	#statistics_title {
+		flex: 0 0 60%;
+		
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 0 0 0 3%;
+	}
+
+		#statistics_title h1 {
+			margin-bottom: 3%;
+		}
+
+		#statistics_title h2 {
+			text-decoration: none;
+			font-weight: 300;
+		}
+
+	#contribution_statistics {
+		flex: 1;
+		padding: 2%;
+	}
+
+#big_graph_content {
+	width: 100%;
+	height: 65%;
+	display: flex;
+	background-color: red;
+}
+
+
+
 
 
 /* Product Database/Search Content
