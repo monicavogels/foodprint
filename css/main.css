@@ -765,6 +765,7 @@ nav {
 		display: flex;
 		width: 100%;
 		height: 30%;
+
 	}
 
 	#greenpeas_title {
@@ -795,19 +796,59 @@ nav {
 		}
 
 		#greenpeas_title h2 {
-
+			color: #555;
+			display: flex;
 		}
 
-		
-
 	#greenpeas_statistics {
-
+		
 	}
 
+		#fav_and_sus {
+			display: flex;
+			flex-direction: row;
+		}
+
+			#fav_and_sus img {
+				width: 50px;
+			}
+
+			#peas_sustainability {
+
+			}
+
+		#sustainability_score {
+		}
+
+			#sustainability_score p {
+
+			}
+
+
+	#greenpeas_content {
+		border-top: 1px solid #8cc63f;
+		width: 94%;
+		height: 65%;
+		display: flex;
+		margin: 0 auto;
+	}
 
 
 /* Recipes
 ------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
