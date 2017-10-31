@@ -403,7 +403,7 @@ nav {
 	}
 
 		#foodprint_title h1 {
-			margin-bottom: 3%;
+			margin-bottom: 5%;
 		}
 
 		#foodprint_title h2 {
@@ -647,7 +647,6 @@ nav {
 		#productdatabase_searchbar img {
 			height: 50px;
 		}
-
 
 #product_categories {
 	width: 100%;
@@ -923,36 +922,99 @@ nav {
 
 			display: flex;
 			flex: 0 0 30%;
-
-			background-color: red;
+			flex-wrap: wrap;
 		}
 
 			#nutritional_values {
 				width: 100%;
-				padding: 5% 25% 5% 5%;
+				padding: 5% 25% 5% 0%;
 			}
 
 				#nutritional_values h6 {
-					
+					font-size: 36pt;
+					margin-bottom: 10%;
 				}
 
-				#nutritional_values p {
+				#nutritional_values li {
 					display: flex;
 					justify-content: space-between;
+
+					font-family: "Open Sans", sans-serif;
+					color: white;
+					font-size: 14pt;
+					font-weight: 300;
+
+					margin: 7% 0;
+				}
+
+				#nutritional_values span {
+					color: #555;
+					font-weight: 700;
 				}
 
 			#where_to_buy {
-
+				width: 100%;
+				padding: 5% 25% 5% 0%;
 			}
+
+				#where_to_buy h6 {
+					font-size: 36pt;
+					margin-bottom: 10%;
+				}
+
+				#where_to_buy li {
+					display: flex;
+					justify-content: space-between;
+
+					font-family: "Open Sans", sans-serif;
+					color: white;
+					font-size: 14pt;
+					font-weight: 300;
+				}
 
 		#peas_center {
 			height: 100%;
 
 			display: flex;
 			flex: 0 0 30%;
-		
-			background-color: green;
+			flex-wrap: wrap;
 		}
+
+			#sustainability_information {
+				width: 100%;
+				padding: 5% 25% 5% 0%;
+			}
+
+				#sustainability_information h6 {
+					font-size: 36pt;
+					margin-bottom: 10%;
+				}
+
+				#sustainability_information h2 {
+					margin: 5% 0;
+					padding-bottom: 15px;
+					border-bottom: 1px solid #8cc63f;
+					display: flex;
+					justify-content: space-between;
+					font-weight: 400;
+				}
+
+				#sustainability_information p {
+					color: white;
+					margin: 15px 0;
+					font-weight: 300;
+					line-height: 1.4;
+					font-size: 12pt;
+				}
+
+				#last_p_sus_info {
+					margin-bottom: 10% !important;
+				}
+
+
+
+
+
 
 		#peas_right {
 			height: 100%;
