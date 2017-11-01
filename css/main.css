@@ -927,7 +927,7 @@ nav {
 
 			#nutritional_values {
 				width: 100%;
-				padding: 5% 25% 5% 0%;
+				padding: 25px 25% 5% 0%;
 			}
 
 				#nutritional_values h6 {
@@ -952,17 +952,17 @@ nav {
 					font-weight: 700;
 				}
 
-			#where_to_buy {
+			#peas_alt_info {
 				width: 100%;
-				padding: 5% 25% 5% 0%;
+				padding: 5% 15% 5% 0%;
 			}
 
-				#where_to_buy h6 {
+				#peas_alt_info h6 {
 					font-size: 36pt;
-					margin-bottom: 10%;
+					margin-bottom: 5%;
 				}
 
-				#where_to_buy li {
+				#peas_alt_info li {
 					display: flex;
 					justify-content: space-between;
 
@@ -982,7 +982,7 @@ nav {
 
 			#sustainability_information {
 				width: 100%;
-				padding: 5% 25% 5% 0%;
+				padding: 25px 25% 5% 0%;
 			}
 
 				#sustainability_information h6 {
@@ -1011,20 +1011,65 @@ nav {
 					margin-bottom: 10% !important;
 				}
 
-
-
-
-
-
 		#peas_right {
 			height: 100%;
 
 			display: flex;
 			flex: 1;
-
-			background-color: blue;
+			flex-wrap: wrap;
 		}
 
+			#top_recipes_green_peas {
+				width: 100%;
+				padding: 25px 0% 5% 0%;
+			}
+
+				#top_recipes_green_peas h6 {
+					font-size: 36pt;
+					margin-bottom: 5%;
+				}
+
+				#thumbs_green_peas {
+					display: flex;
+					flex-direction: row;
+				}
+
+				#thumb_green_peas_1 {
+					width: 47.5%;
+					height: 300px;
+					margin-right: 5%;
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+					background-size: cover;
+
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					align-items: flex-start;
+
+					padding: 3%;
+				}
+
+					#thumb_green_peas_1 h5 {
+						margin-bottom: 15px;
+					}
+
+				#thumb_green_peas_2 {
+					width: 47.5%;
+					height: 300px;
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+					background-size: cover;
+
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					align-items: flex-start;
+
+					padding: 3%;
+				}
+
+					#thumb_green_peas_2 h5 {
+						margin-bottom: 15px;
+					}
 
 /* Recipes
 ------------------------------------------------------------------------*/
