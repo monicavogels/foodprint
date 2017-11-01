@@ -1289,9 +1289,8 @@ nav {
 
 
 			.recent_fav_thumb {
-				width: 24%;
-				height: 220px;
-				padding: 1%;
+				padding: 5%;
+				height: 230px;
 
 				display: flex;
 				justify-content: flex-end;
@@ -1299,42 +1298,63 @@ nav {
 				flex-direction: column;
 			}
 
-			.recent_fav_thumb h5 {
-				margin-bottom: 10px;
+				.recent_fav_thumb h5 {
+					margin-bottom: 10px;
+				}
+
+			#recent_fav_1 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
+
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 1;
+				grid-row-end: 2;
 			}
 
-				#recent_fav_1 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
-					background-size: cover;
-<<<<<<< HEAD
-					margin-right: 10px;
-=======
-					margin-right: 1%;
->>>>>>> cc700cbd47275e736459fd7d92ab87989419b437
-				}
+			#recent_fav_2 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
 
-				#recent_fav_2 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
-					background-size: cover;
-					margin-right: 1%;
-				}
+				grid-column-start: 2;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
 
-				#recent_fav_3 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pizza.png") no-repeat center;
-					background-size: cover;
-					margin-right: 1%;
-				}
+			#recent_fav_3 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pizza.png") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
 
-				#recent_fav_4 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
-					background-size: cover;
-					margin-right: 1%;
-				}
+				grid-column-start: 3;
+				grid-column-end: 4;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
 
-				#recent_fav_5 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
-					background-size: cover;
-				}
+			#recent_fav_4 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
+
+				grid-column-start: 4;
+				grid-column-end: 5;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
+
+			#recent_fav_5 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+				background-size: cover;
+
+				grid-column-start: 5;
+				grid-column-end: 6;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
 
 
 	/* top 30% is precies hetzelfde als de main recipe page, wil je iets veranderen --> maak nieuwe id's aan. */
@@ -1349,35 +1369,47 @@ nav {
 
 	}
 			.romantic_info {
-
-			}
-
-			.romantic_time {
-				width: 100%;
-				z-index: 999;
-				height: 50px;
-
-				display: flex;
-				flex-direction: row;
-				justify-content: flex-end;
-				align-items: center;
-
-			}
-
-				.romantic_time img {
-					width: 45px;
-				}
-
-			.romantic_name {
-				width: 100%;
-				
 				display: flex;
 				justify-content: flex-end;
 				align-content: flex-start;
 				flex-direction: column;
 
-
 			}
+
+
+			.romantic_time {
+				width: 30%;
+				height: 50px;
+				background-color: black;
+				margin-top: 5%;
+				padding: 0 0%;
+
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}	
+
+				.romantic_time p {
+					font-family: "WWF", sans-serif;
+					color: white;
+					font-size: 16pt;
+
+				}
+
+				.romantic_time img {
+					width: 25px;
+					margin-right: 10px;
+				}
+
+			.romantic_name {
+				margin-top: 50%;
+				padding: 5%;
+			}
+
+				.romantic_name h5 {
+					margin-bottom: 10px;
+				}
 
 
 		#romantic_1 {
