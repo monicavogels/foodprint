@@ -539,56 +539,6 @@ nav {
 	}
 
 
-/* Statistics
-------------------------------------------------------------------------*/
-#statistics_content {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
- 	height: 100vh;
- 	width: calc(100% - 100px);
- 	margin-left: 100px;
-}
-
-#statistics_intro { /* Top 30% section */
-	display: flex;
-	width: 100%;
-	height: 30%;
-}
-
-	#statistics_title {
-		flex: 0 0 60%;
-		
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		padding: 0 0 0 3%;
-	}
-
-		#statistics_title h1 {
-			margin-bottom: 3%;
-		}
-
-		#statistics_title h2 {
-			text-decoration: none;
-			font-weight: 300;
-		}
-
-	#contribution_statistics {
-		flex: 1;
-		padding: 2%;
-	}
-
-#big_graph_content {
-	width: 100%;
-	height: 65%;
-	display: flex;
-	background-color: red;
-}
-
-
 
 
 
@@ -1251,31 +1201,153 @@ nav {
 		}
 
 
+/* Statistics
+------------------------------------------------------------------------*/
+
+
+	 #statistics_info	{
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+		position:absolute;
+	    left:50px;
+	    bottom:20%;
+	    z-index:1;
+		}
+
+
+#statistics_content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+ 	height: 100vh;
+ 	width: calc(100% - 100px);
+ 	margin-left: 100px;
+}
+
+#statistics_intro { /* Top 30% section */
+	display: flex;
+	width: 100%;
+	height: 30%;
+}
+
+	#statistics_title {
+		flex: 0 0 60%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 0 0 3%;
+	}
+
+		#statistics_title h1 {
+			margin-bottom: 3%;
+		}
+
+		#statistics_title h2 {
+			text-decoration: none;
+			font-weight: 300;
+		}
+
+	#contribution_statistics {
+		flex: 1;
+		padding: 2%;
+		flex-direction: row;
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	.equals_stats{
+				padding: 1%;
+				margin:1%;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+				vertical-align: center;
+				height:75%;
+			}
+
+	#big_graph_content {
+		width: 100%;
+		height: 80vh;
+ 		margin-top: 18%;
+		display: flex;
+		position:absolute;
+	}
 
 
 
 
+/* ANIMATED STATISTICS 
+------------------------------------------------ */
 
 
+#graph-1 {
+  stroke: url(#gradient-1);
+  stroke-width: 1;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -moz-animation: lineani 1.3s linear forwards;
+  -webkit-animation: lineani 1.3s linear forwards;
+  animation: lineani 1.3s linear forwards;
+  text-align: center;
+  margin-bottom:0px;
+}
 
 
+#poly-1 {
+  fill: url(#gradient-3);
+}
 
 
+@-moz-keyframes lineani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes lineani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes lineani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
+.chart-line {
+  height:100%;
+}
 
+.horizontal,
+.vertical {
+  stroke-width: 0.1;
+  stroke: rgba(255,255,255, 0.2);
+}
 
+/* CLEARFIX HELPER */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
 
+.cf:after {
+  clear: both;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
