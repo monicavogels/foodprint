@@ -403,7 +403,7 @@ nav {
 	}
 
 		#foodprint_title h1 {
-			margin-bottom: 3%;
+			margin-bottom: 5%;
 		}
 
 		#foodprint_title h2 {
@@ -597,7 +597,6 @@ nav {
 		#productdatabase_searchbar img {
 			height: 50px;
 		}
-
 
 #product_categories {
 	width: 100%;
@@ -873,49 +872,227 @@ nav {
 
 			display: flex;
 			flex: 0 0 30%;
-
-			background-color: red;
+			flex-wrap: wrap;
 		}
 
 			#nutritional_values {
 				width: 100%;
-				padding: 5% 25% 5% 5%;
+				padding: 25px 25% 5% 0%;
 			}
 
 				#nutritional_values h6 {
-					
+					font-size: 36pt;
+					margin-bottom: 10%;
 				}
 
-				#nutritional_values p {
+				#nutritional_values li {
 					display: flex;
 					justify-content: space-between;
+
+					font-family: "Open Sans", sans-serif;
+					color: white;
+					font-size: 14pt;
+					font-weight: 300;
+
+					margin: 7% 0;
 				}
 
-			#where_to_buy {
+				#nutritional_values span {
+					color: #555;
+					font-weight: 700;
+				}
 
+			#peas_alt_info {
+				width: 100%;
+				padding: 5% 15% 5% 0%;
 			}
+
+				#peas_alt_info h6 {
+					font-size: 36pt;
+					margin-bottom: 5%;
+				}
+
+				#peas_alt_info li {
+					display: flex;
+					justify-content: space-between;
+
+					font-family: "Open Sans", sans-serif;
+					color: white;
+					font-size: 14pt;
+					font-weight: 300;
+				}
 
 		#peas_center {
 			height: 100%;
 
 			display: flex;
 			flex: 0 0 30%;
-		
-			background-color: green;
+			flex-wrap: wrap;
 		}
+
+			#sustainability_information {
+				width: 100%;
+				padding: 25px 25% 5% 0%;
+			}
+
+				#sustainability_information h6 {
+					font-size: 36pt;
+					margin-bottom: 10%;
+				}
+
+				#sustainability_information h2 {
+					margin: 5% 0;
+					padding-bottom: 15px;
+					border-bottom: 1px solid #8cc63f;
+					display: flex;
+					justify-content: space-between;
+					font-weight: 400;
+				}
+
+				#sustainability_information p {
+					color: white;
+					margin: 15px 0;
+					font-weight: 300;
+					line-height: 1.4;
+					font-size: 12pt;
+				}
+
+				#last_p_sus_info {
+					margin-bottom: 10% !important;
+				}
 
 		#peas_right {
 			height: 100%;
 
 			display: flex;
 			flex: 1;
-
-			background-color: blue;
+			flex-wrap: wrap;
 		}
 
+			#top_recipes_green_peas {
+				width: 100%;
+				padding: 25px 0% 5% 0%;
+			}
 
+				#top_recipes_green_peas h6 {
+					font-size: 36pt;
+					margin-bottom: 5%;
+				}
+
+				#thumbs_green_peas {
+					display: flex;
+					flex-direction: row;
+				}
+
+				#thumb_green_peas_1 {
+					width: 47.5%;
+					height: 300px;
+					margin-right: 5%;
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+					background-size: cover;
+
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					align-items: flex-start;
+
+					padding: 3%;
+				}
+
+					#thumb_green_peas_1 h5 {
+						margin-bottom: 15px;
+					}
+
+				#thumb_green_peas_2 {
+					width: 47.5%;
+					height: 300px;
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+					background-size: cover;
+
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					align-items: flex-start;
+
+					padding: 3%;
+				}
+
+					#thumb_green_peas_2 h5 {
+						margin-bottom: 15px;
+					}
+
+			#all_green_peas_recipes {
+				width: 100%;
+				width: 100%;
+				display: flex;
+				justify-content: flex-end;
+			}
+
+			#all_green_peas_recipes a {
+				
+			}
 /* Recipes
 ------------------------------------------------------------------------*/
+#recipes_content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+ 	height: 100vh;
+ 	width: calc(100% - 100px);
+ 	margin-left: 100px;
+}
+
+#recipes_intro { /* Top 30% section */
+	display: flex;
+	width: 100%;
+	height: 30%;
+}
+
+	#recipes_title {
+		flex: 0 0 60%;
+		
+		width: 50%;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 0 0 0 3%;
+	}
+
+		#recipes_title h1 {
+			margin-bottom: 3%;
+		}
+
+		#recipes_title a {
+			text-decoration: none;
+			font-weight: 300;
+		}
+
+	#recipes_searchbar {
+		flex: 1;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: flex-end;
+
+		padding: 3% 0% 1% 5%;
+		margin: 3%;
+		border-bottom: 1px solid #8cc63f;
+	}	
+
+		#recipes_searchbar img {
+			height: 50px;
+		}
+
+#recipes_thumbs_etc {
+	width: 100%;
+	height: 65%;
+	display: flex;
+	background-color: red;
+}
 
 
 
