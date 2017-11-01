@@ -1090,9 +1090,150 @@ nav {
 #recipes_thumbs_etc {
 	width: 100%;
 	height: 65%;
-	display: flex;
-	background-color: red;
+
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 17% 3%;
+	grid-template-rows: 50% 50%;
 }
+
+	#thumb_r1 {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 3;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/chefofthemonth.jpg") no-repeat center;
+		background-size: cover;
+		margin: 0 10px 0 0;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_r2 {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/roast-dinner-for-one.jpg") no-repeat center;
+		background-size: cover;
+		margin: 0 10px 10px 0;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_r3 {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/fall-foods-for-weight-loss-870x645.jpg") no-repeat center;
+		background-size: cover;
+		margin: 0 10px 10px 0;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_r4 {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/bambi_2.png") no-repeat center;
+		background-size: cover;
+		margin: 0 0 10px 0;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_r5 {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/20120213_ButternutSquash_25.jpg") no-repeat center;
+		background-size: cover;
+		margin: 0 10px 0 0;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#thumb_r6 {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/lemon-panna-cotta-with-vodka-blueberry-syrup-92005-1.jpeg") no-repeat center;
+		background-size: cover;
+		margin: 0 0 0 0;
+
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5%;
+	}
+
+	#filter_recipes {
+		grid-column-start: 5;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 3;
+
+		padding: 0 0 0 5%;
+	}	
+
+		#filter_recipes h6 {
+			width: 100%;
+			display: block;
+		}
+
+		#filter_recipes li {
+			font-family: "Open Sans", sans-serif;
+			color: white;
+			font-size: 16pt;
+			font-weight: 300;
+
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			border-bottom: 1px solid white;
+			padding: 15% 0 5% 0;
+		}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1165,9 +1306,9 @@ nav {
 
 	#profile_data { /* Left 65% section */
 		display: flex;
-		width: 75%;
+		flex: 0 0 70%;
 		height: 90%;
-				padding: 0 0 0 3%;
+		padding: 0 0 0 3%;
 		flex-wrap:wrap;
 	}
 
@@ -1245,10 +1386,10 @@ nav {
 
 	#suggestions_profile { /* Bottom 50% section */
 		width: 100%;
-		height: 65%;
+		height: 52.5%;
 		display: grid;
 		grid-template-columns: 33% 33% 33%;
-		grid-template-rows: 80% 80%;
+		grid-template-rows: 100%;
 		margin-right: 1%;
 	}
 
@@ -1264,7 +1405,7 @@ nav {
 
 			background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pizza.png") no-repeat center;
 			background-size: cover;
-			margin: 10px 50px 0 0;
+			margin: 10px 10px 0 0;
 
 			display: flex;
 			align-items: flex-start;
@@ -1281,7 +1422,7 @@ nav {
 
 			background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
 			background-size: cover;
-			margin: 10px 50px 5px 5px;
+			margin: 10px 10px 0px 5px;
 
 			display: flex;
 			align-items: flex-start;
@@ -1298,7 +1439,7 @@ nav {
 
 			background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
 			background-size: cover;
-			margin: 10px 5px 5px 5px;
+			margin: 10px 0px 0px 5px;
 
 			display: flex;
 			align-items: flex-start;
@@ -1313,8 +1454,9 @@ nav {
 
 		#profile_leaderboard { /* Right 35% section */
 			display: flex;
-			width: 25%;
+			flex: 1;
 			height: 100%;
+			padding-right: 3%;
 			display: flex;
 		   	flex-direction: column;
 		    align-items: flex-start;
@@ -1356,7 +1498,7 @@ nav {
 
 		td, th {
 			padding: 2% 4%;
-			height: 80px;
+			height: 85px;
 			text-align: left;
 			vertical-align: middle;
 		}
