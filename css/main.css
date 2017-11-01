@@ -1382,16 +1382,20 @@ nav {
 ------------------------------------------------------------------------*/
 
 
+.chart-svg{
+	width: 10px;
+}
+
 	 #statistics_info	{
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding: 5%;
-		position:absolute;
 	    left:50px;
-	    bottom:20%;
+	    bottom:0;
 	    z-index:1;
+	    position: fixed;
 		}
 
 
@@ -1406,11 +1410,14 @@ nav {
 
 #statistics_intro { /* Top 30% section */
 	display: flex;
-	width: 100%;
+	width: 90%;
 	height: 30%;
+	position: fixed;
+	left:100px;
 }
 
 	#statistics_title {
+
 		flex: 0 0 60%;
 		height: 100%;
 		display: flex;
@@ -1464,6 +1471,7 @@ nav {
 
 
 #graph-1 {
+
   stroke: url(#gradient-1);
   stroke-width: 1;
   fill: transparent;
@@ -1499,7 +1507,9 @@ nav {
 }
 
 .chart-line {
-  height:100%;
+	left:80px;
+	position:fixed;
+  height:80%;
 }
 
 .horizontal,
@@ -1528,3 +1538,5 @@ nav {
 .cf {
   *zoom: 1;
 }
+
+
