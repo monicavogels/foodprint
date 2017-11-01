@@ -18,7 +18,7 @@ var chart_w = 80;
 var stepX = 77 / 14;
 
 var chart_1_y = [
-   90, 89, 80, 80, 75, 71, 65, 60, 50, 48, 45, 40, 30
+   90, 89, 80, 80, 75, 71, 65, 60, 50, 48, 45, 40, 30, 28, 25, 20, 20, 20
 ];
 
 function point(x, y) {
@@ -33,11 +33,11 @@ function drawGrid(graph) {
     for (i = 0; i <= stepX + 2; i++) {
         var horizontalLine = graph.path(
             "M" + 0 + "," + stepX * i + " " +
-            "L" + 77 + "," + stepX * i);
+            "L" + 105 + "," + stepX * i);
         horizontalLine.attr('class', 'horizontal');
         g.add(horizontalLine);
     };
-    for (i = 0; i <= 14; i++) {
+    for (i = 0; i <= 19; i++) {
         var horizontalLine = graph.path(
             "M" + stepX * i + "," + 38.7 + " " +
             "L" + stepX * i + "," + 0)
