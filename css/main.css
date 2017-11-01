@@ -1204,12 +1204,11 @@ nav {
 		grid-row-start: 1;
 		grid-row-end: 3;
 
-		padding: 0 0 0 5%;
+		padding: 0 0 0 15%;
 	}	
 
 		#filter_recipes h6 {
-			width: 100%;
-			display: block;
+		
 		}
 
 		#filter_recipes li {
@@ -1226,17 +1225,109 @@ nav {
 			padding: 15% 0 5% 0;
 		}
 
+			#recipe_filter_button {
+				margin-top: 15%;
+				display: flex;
+				justify-content: flex-end;
+			}
+
+				#recipe_filter_button h6 {
+					background-color: #8cc63f;
+					padding: 2.5% 10% 5% 10%;
+				}
+
+	/* top 30% is precies hetzelfde als de main recipe page, wil je iets veranderen --> maak nieuwe id's aan. */
+	#favorite_items {
+		width: 94%;
+		height: 65%;
+		padding: 0 3% 0 3%;
+		background-color: red;
+	}
+
+		#favorite_list {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			margin: 0% 0 5% 0;
+		}
+
+			.list_icon {
+				margin-right: 100px;
+			}
+
+			.list_icon img {
+				padding: 25px;
+				margin-bottom: 15px;
+
+				width: 100px;
+				border: 1px solid #8cc63f;
+				border-radius: 200px;
+			}
+
+			.list_icon a, .list_icon p {
+				text-align: center;
+				font-family: "WWF", sans-serif;
+				color: white;
+				font-size: 18pt;
+				text-decoration: none;
+			}
+
+		#recent_added_favs {
+		}
+
+		#recent_added_favs h6 {
+			margin-bottom: 2%;
+			font-size: 40pt;
+		}
+
+		#recent_added_favs_thumbs {
+			display: flex;
+			flex-direction: row;
+		}
 
 
+			.recent_fav_thumb {
+				width: 15%;
+				height: 220px;
+				margin-right: 10px;
+				padding: 2%;
 
+				display: flex;
+				justify-content: flex-end;
+				align-content: flex-start;
+				flex-direction: column;
+			}
 
+			.recent_fav_thumb h5 {
+				margin-bottom: 15px;
+			}
 
+				#recent_fav_1 {
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+					background-size: cover;
+				}
 
+				#recent_fav_2 {
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+					background-size: cover;
+				}
 
+				#recent_fav_3 {
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pizza.png") no-repeat center;
+					background-size: cover;
+				}
 
+				#recent_fav_4 {
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+					background-size: cover;
+				}
 
-
-
+				#recent_fav_5 {
+					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+					background-size: cover;
+				}
 
 
 
@@ -1524,16 +1615,20 @@ nav {
 ------------------------------------------------------------------------*/
 
 
+.chart-svg{
+	width: 10px;
+}
+
 	 #statistics_info	{
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding: 5%;
-		position:absolute;
 	    left:50px;
-	    bottom:20%;
+	    bottom:0;
 	    z-index:1;
+	    position: fixed;
 		}
 
 
@@ -1548,11 +1643,14 @@ nav {
 
 #statistics_intro { /* Top 30% section */
 	display: flex;
-	width: 100%;
+	width: 90%;
 	height: 30%;
+	position: fixed;
+	left:100px;
 }
 
 	#statistics_title {
+
 		flex: 0 0 60%;
 		height: 100%;
 		display: flex;
@@ -1606,6 +1704,7 @@ nav {
 
 
 #graph-1 {
+
   stroke: url(#gradient-1);
   stroke-width: 1;
   fill: transparent;
@@ -1641,7 +1740,9 @@ nav {
 }
 
 .chart-line {
-  height:100%;
+	left:80px;
+	position:fixed;
+  height:80%;
 }
 
 .horizontal,
@@ -1670,3 +1771,5 @@ nav {
 .cf {
   *zoom: 1;
 }
+
+
