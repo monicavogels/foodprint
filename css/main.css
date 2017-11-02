@@ -1291,9 +1291,8 @@ nav {
 
 
 			.recent_fav_thumb {
-				width: 24%;
-				height: 220px;
-				padding: 1%;
+				padding: 5%;
+				height: 230px;
 
 				display: flex;
 				justify-content: flex-end;
@@ -1301,42 +1300,63 @@ nav {
 				flex-direction: column;
 			}
 
-			.recent_fav_thumb h5 {
-				margin-bottom: 10px;
+				.recent_fav_thumb h5 {
+					margin-bottom: 10px;
+				}
+
+			#recent_fav_1 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
+
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 1;
+				grid-row-end: 2;
 			}
 
-				#recent_fav_1 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
-					background-size: cover;
-<<<<<<< HEAD
-					margin-right: 10px;
-=======
-					margin-right: 1%;
->>>>>>> cc700cbd47275e736459fd7d92ab87989419b437
-				}
+			#recent_fav_2 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
 
-				#recent_fav_2 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
-					background-size: cover;
-					margin-right: 1%;
-				}
+				grid-column-start: 2;
+				grid-column-end: 3;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
 
-				#recent_fav_3 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pizza.png") no-repeat center;
-					background-size: cover;
-					margin-right: 1%;
-				}
+			#recent_fav_3 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pizza.png") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
 
-				#recent_fav_4 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
-					background-size: cover;
-					margin-right: 1%;
-				}
+				grid-column-start: 3;
+				grid-column-end: 4;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
 
-				#recent_fav_5 {
-					background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
-					background-size: cover;
-				}
+			#recent_fav_4 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/rice.jpg") no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
+
+				grid-column-start: 4;
+				grid-column-end: 5;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
+
+			#recent_fav_5 {
+				background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 0.9) 100%), url("../img/pasta.png") no-repeat center;
+				background-size: cover;
+
+				grid-column-start: 5;
+				grid-column-end: 6;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
 
 
 	/* top 30% is precies hetzelfde als de main recipe page, wil je iets veranderen --> maak nieuwe id's aan. */
@@ -1351,35 +1371,47 @@ nav {
 
 	}
 			.romantic_info {
-
-			}
-
-			.romantic_time {
-				width: 100%;
-				z-index: 999;
-				height: 50px;
-
-				display: flex;
-				flex-direction: row;
-				justify-content: flex-end;
-				align-items: center;
-
-			}
-
-				.romantic_time img {
-					width: 45px;
-				}
-
-			.romantic_name {
-				width: 100%;
-				
 				display: flex;
 				justify-content: flex-end;
 				align-content: flex-start;
 				flex-direction: column;
 
-
 			}
+
+
+			.romantic_time {
+				width: 30%;
+				height: 50px;
+				background-color: black;
+				margin-top: 5%;
+				padding: 0 0%;
+
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}	
+
+				.romantic_time p {
+					font-family: "WWF", sans-serif;
+					color: white;
+					font-size: 16pt;
+
+				}
+
+				.romantic_time img {
+					width: 25px;
+					margin-right: 10px;
+				}
+
+			.romantic_name {
+				margin-top: 50%;
+				padding: 5%;
+			}
+
+				.romantic_name h5 {
+					margin-bottom: 10px;
+				}
 
 
 		#romantic_1 {
@@ -1466,6 +1498,263 @@ nav {
 			}
 
 
+/* Butter Chicken Rice
+------------------------------------------------------------------------*/
+#butter_intro { /* Top 30% section */
+	display: flex;
+	width: 100%;
+	height: 30%;
+
+}
+
+#butter_title {
+	flex: 0 0 65%;
+	
+	width: 50%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	padding: 0 0 0 3%;
+}
+	#butter_title a {
+		text-decoration: none;
+		font-weight: 300;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#butter_title h1 {
+		margin-bottom: 3%;
+	}
+
+	#butter_title img {
+		width: 100px;
+	}
+
+	#butter_title h2 {
+		color: #555;
+		display: flex;
+	}
+
+#butter_statistics {
+	flex: 1;
+	padding: 3%;
+	text-align: right;
+
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+	#but_and_sus {
+		width: 100%;
+
+	}
+
+		#but_and_sus img {
+			width: 50px;
+		}
+
+		#but_fave {
+			margin-right: 10%;
+		}
+
+
+	#butter_used {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+		#butter_used h5 {
+			color: white;
+			background-color: #8cc63f;
+			padding: 1% 3% 2% 3%;
+		}
+
+
+#butter_content {
+	width: 94%;
+	height: 65%;
+	display: flex;
+	margin: 0 auto;
+}
+
+	#butter_left {
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex: 0 0 25%;
+	}
+
+		#butter_vid {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+			#butter_vid_image {
+				width: 100%;
+				height: 0;
+				background: url("../img/vid.png") no-repeat center;
+				background-size: contain;
+				padding-top: 100%; 
+				margin-bottom: 15%;
+			}
+
+			#butter_vid h2 {
+				margin-bottom: 5%;
+			}	
+
+			#butter_vid h6 {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			#butter_vid h6 img {
+				width: 100px;
+			}
+
+	#butter_center {
+		height: 100%;
+
+		display: flex;
+		flex: 0 0 30%;
+		flex-wrap: wrap;
+	}
+
+		#instructions {
+			width: 100%;
+			padding: 0 10% 5% 10%;
+		}
+
+		#instructions h6 {
+			font-size: 36pt;
+			margin-bottom: 25px;
+			color: #8cc63f;
+		}
+
+		#instructions p {
+			color: white;
+			margin: 0 0 5% 0;
+			font-weight: 300;
+			line-height: 1.4;
+			font-size: 12pt;
+		}
+
+	#butter_right {
+		height: 100%;
+
+		display: flex;
+		flex: 0 0 20%;
+		flex-wrap: wrap;
+	}
+
+		#butter_values {
+				width: 100%;
+				padding: 0 0 5% 0%;
+			}
+
+				#butter_values h6 {
+					font-size: 36pt;
+					margin-bottom: 25px;
+					color: #8cc63f;
+				}
+
+				#butter_values li {
+					display: flex;
+					justify-content: space-between;
+
+					font-family: "Open Sans", sans-serif;
+					color: white;
+					font-size: 14pt;
+					font-weight: 300;
+
+					margin: 0 0 7% 0;
+				}
+
+				#butter_values span {
+					color: #555;
+					font-weight: 700;
+				}
+
+	#butter_extra {
+		height: 100%;
+
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+	}
+
+		#butter_equals {
+			width: 100%;
+			padding: 0 10% 5% 10%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		#butter_equals_data {
+			border: 10px solid #8cc63f;
+			padding: 10px;
+			height: 250px;
+			width: 250px;
+			border-radius: 200px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			margin-bottom: 100px;
+
+		}
+
+			#butter_equals_data p {
+				color: #555;
+				font-size: 14pt;
+			}
+
+			#butter_equals_data h6 {
+				font-size: 60pt;
+				padding: 2% 0 6% 0;
+			}
+
+		#butter_equals_car {
+			width: 100%;
+			padding: 0 10% 5% 10%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+		}
+
+			#butter_equals_car p {
+				color: #555;
+				text-align: center; 
+				font-size: 14pt;
+			}
+
+			#butter_equals_car h6 {
+				font-size: 60pt;
+				padding: 0% 0 2% 0;
+
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			#butter_equals_car h6 img {
+				width: 125px;
+				margin-left: 15px;
+			}
 
 
 
@@ -1600,10 +1889,10 @@ nav {
 		------------------------------------------------------------------------*/
 
 	#suggestion_title{ 
-				display: flex;
-				width: 100%;
-				padding: 3% 0 1% 0;
-				}
+		display: flex;
+		width: 100%;
+		padding: 3% 0 1% 0;
+	}
 
 	#suggestions_profile { /* Bottom 50% section */
 		width: 100%;
