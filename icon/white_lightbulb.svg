@@ -3,26 +3,18 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#8CC63F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#8CC63F;stroke:#8CC63F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{opacity:0.5;}
-	.st3{opacity:0.25;}
-	.st4{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st5{fill:#8CC63F;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#8CC63F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{opacity:0.5;}
+	.st4{opacity:0.25;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;}
 </style>
 <g>
-	<line class="st4" x1="21.3" y1="39.7" x2="28.7" y2="39.7"/>
-	<line class="st4" x1="22.5" y1="42.3" x2="27.5" y2="42.3"/>
-	<line class="st4" x1="25" y1="9.4" x2="25" y2="6.6"/>
-	<g>
-		<line class="st4" x1="37.4" y1="15.6" x2="39.9" y2="14.2"/>
-		<line class="st4" x1="12.6" y1="15.6" x2="10.1" y2="14.2"/>
-	</g>
-	<g>
-		<line class="st4" x1="32.1" y1="10.7" x2="33.6" y2="8.2"/>
-		<line class="st4" x1="17.9" y1="10.7" x2="16.4" y2="8.2"/>
-	</g>
-	<path class="st4" d="M25,12.5c5.8,0,10.6,4.7,10.6,10.6c0,4.8-5.3,8.9-6.2,10.5c-0.9,1.7-0.7,3.5-0.7,3.5h-7.4c0,0,0.3-1.8-0.7-3.5
-		c-0.9-1.6-6.2-5.6-6.2-10.5C14.4,17.2,19.2,12.5,25,12.5z"/>
+	<line class="st5" x1="22" y1="37.4" x2="28.9" y2="37.4"/>
+	<line class="st5" x1="23.1" y1="40.8" x2="27.8" y2="40.8"/>
+	<path class="st5" d="M25.5,11.2c5.4,0,9.8,4.4,9.8,9.8c0,4.5-5,8.2-5.8,9.7c-0.9,1.6-0.6,3.2-0.6,3.2H22c0,0,0.2-1.7-0.6-3.2
+		c-0.8-1.5-5.8-5.2-5.8-9.7C15.6,15.6,20,11.2,25.5,11.2z"/>
 </g>
 </svg>

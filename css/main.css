@@ -62,7 +62,6 @@ span {
 
 a {
 	font-family: "Open Sans", sans-serif;
-	font-weight: 700;
 	color: #8cc63f;
 	font-size: 12pt;
 	text-decoration: underline;
@@ -74,7 +73,6 @@ label {
 	color: white;
 	font-size: 50pt;	
 }
-
 
 
 /* Body
@@ -418,6 +416,10 @@ nav {
 		flex-direction: row;
 
 		padding: 2%;
+	}
+
+	#foodprint_why a {
+		text-decoration: none;
 	}
 	
 		.why {
